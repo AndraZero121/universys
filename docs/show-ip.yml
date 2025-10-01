@@ -1,0 +1,19 @@
+title: Show IP Information
+desc: "Displays network configuration and IP address."
+shell:
+  command_prompt:
+    - cmd: "ipconfig"
+      output: "IPv4 Address. . . . . . . . . . . : 192.168.1.10"
+      dir: "C:\Users\tendouarisu"
+  powershell:
+    - cmd: "Get-NetIPAddress"
+      output: "192.168.1.10"
+      dir: "C:\Users\tendouarisu"
+  bash:
+    - cmd: "ip addr"
+      output: "inet 192.168.1.10/24"
+      dir: "~/"
+  zsh:
+    - cmd: "ip addr"
+      output: "inet 192.168.1.10/24"
+      dir: "~/"
